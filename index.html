@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./data/style.css">
+    <link rel="stylesheet" href="./fontawesome-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit-icons.min.js"></script>
+    <title>Denlíne@</title>
+</head>
+
+<body>
+
+    <div style="display: inline;">
+        <!--Navbar-->
+        <div class="uk-flex uk-flex-between navbar-sales">
+            <div class="uk-flex uk-flex-middle">
+                <div uk-toggle="target: .menu-vertical-sales; cls: show" class="padding-horizontal-20">
+                    <i class="fas fa-bars font-size-20 color-blue cursor-pointer" style="margin-left: 10px;" uk-toggle="target: .main-container-sales; cls: width-menu-vertical-sales"></i>
+                </div>
+                <div>
+                    <img src="./data/logo1.png" class="logo-size-sales" alt="">
+                </div>
+                <div class="uk-inline">
+                    <div class="cursor-pointer uk-flex uk-flex-middle" style="margin-left: 60px;">
+                        <img class="logo-store-size-sales" src="./data/logo2.png " alt=" ">
+                        <i class="fas fa-caret-down font-size-17"></i>
+                    </div>
+                    <div uk-drop="mode: click">
+                        <div style="position: relative;">
+                            <div class="drop-store-sales">
+                                <ul class="uk-list" style="padding-bottom: 20px;">
+                                    <h6 class=" uk-margin-remove font-size-10 padding-horizontal-20">Tienda seleccionada:</h6>
+                                    <div class="hr-tab"></div>
+                                    <h5 class="uk-text-bold uk-margin-remove font-size-13 padding-horizontal-20" style="padding-top: 5px;">La Ferra</h5>
+                                    <div class="hr-tab"></div>
+                                    <div class="padding-horizontal-25" style="margin-top: 40px;">
+                                        <div class="uk-flex uk-flex-middle">
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-12">Facturas:</h6>
+                                            <h6 class="uk-margin-remove font-size-12">1</h6>
+                                        </div>
+                                        <div class="padding-vertical-20">
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-12">Tienda:</h6>
+                                            <h6 class="uk-margin-remove font-size-12">Panaderia Maria</h6>
+                                        </div>
+                                        <div class="uk-flex uk-flex-middle">
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-12">Caja:</h6>
+                                            <h6 class="uk-margin-remove font-size-12">1</h6>
+                                        </div>
+                                        <div class="padding-vertical-20">
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-12">Modo:</h6>
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-12 color-green">ONLINE</h6>
+                                        </div>
+                                    </div>
+                                    <div class="hr-tab"></div>
+                                    <h6 class=" uk-margin-remove uk-text-bold font-size-12 padding-vertical-5 padding-horizontal-25">Offline</h6>
+                                    <div class="hr-tab"></div>
+                                    <h6 class=" uk-margin-remove uk-text-bold font-size-12 padding-vertical-5 padding-horizontal-25" style="width: 60px;">Opciones de caja</h6>
+                                    <div class="hr-tab"></div>
+                                    <h6 class=" uk-margin-remove uk-text-bold font-size-12 padding-vertical-5 padding-horizontal-25">Productos más vendidos</h6>
+                                    <div class="hr-tab"></div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-inline cursor-pointer padding-horizontal-30 uk-flex uk-flex-middle">
+                <button class="button-data-user-sales uk-flex uk-flex-middle">
+                    <img class="logo-user-size-sales" src="./data/user.png " alt=" ">
+                    <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Mireya Mopan</h4>
+                    <i class="fas fa-caret-down "></i>
+                </button>
+                <div uk-drop="mode: click">
+                    <div class="uk-card uk-card-body uk-card-default uk-box-shadow-large drop-data-user-sales">
+                        <div class="padding-vertical-10">
+                            <h5 class="uk-text-bold uk-margin-remove">Roles activados:</h5>
+                            <h5 class="uk-margin-remove ">Propietario de la empresa</h5>
+                        </div>
+                        <div class="hr-tab"></div>
+                        <div class="padding-vertical-10">
+                            <h5 class="uk-text-bold uk-margin-remove ">Su documento es:</h5>
+                            <h5 class="uk-margin-remove ">CC: 55555555555001</h5>
+                        </div>
+                        <div class="hr-tab"></div>
+                        <div class="padding-vertical-10">
+                            <h5 class="uk-text-bold uk-margin-remove">Id de usuario:</h5>
+                            <h5 class="uk-margin-remove ">94518</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Menu vertical ERP-->
+        <div style="position: relative;">
+            <div class="menu-vertical-sales">
+                <ul class="uk-list" style="padding-bottom: 20px;">
+                    <div class="uk-flex uk-flex-between">
+                        <div style="margin-left: 33px;">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold">ERP</h4>
+                            <h4 class="uk-margin-remove color-blue uk-text-bold">Dashboard</h4>
+                        </div>
+                        <div style="padding-right: 5px;">
+                            <div uk-toggle="target: .menu-vertical-sales; cls: show" style="margin-right: 10px;">
+                                <i class=" fas fa-times font-size-17 color-blue cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-sales">
+                            <img class="img-menu-vertical-size-sales" src="./data/7.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Inventario</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-sales">
+                            <img class="img-menu-vertical-size-sales" src="./data/8.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Reportes</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-sales">
+                            <img class="img-menu-vertical-size-sales" src="./data/9.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Tercero</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-sales">
+                            <img class="img-menu-vertical-size-sales" src="./data/10.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Contabilidad</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-sales">
+                            <img class="img-menu-vertical-size-sales" src="./data/11.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Pedidos</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-sales">
+                            <img class="img-menu-vertical-size-sales" src="./data/12.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Crear producto</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-sales">
+                            <img class="img-menu-vertical-size-sales" src="./data/13.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Opciones de caja</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-sales">
+                            <img class="img-menu-vertical-size-sales" src="./data/14.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Domicilios</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-sales">
+                            <img class="img-menu-vertical-size-sales" src="./data/15.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12" style="width: 100px;">Administracion de pedidos</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-sales">
+                            <img class="img-menu-vertical-size-sales" src="./data/14.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Mesas</h4>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="main-container-sales">
+            <div class="uk-flex uk-flex-middle uk-flex-between navbar-search-products-sales">
+                <div style="margin-left: 50px;">
+                    <h3 class="uk-margin-remove uk-text-bold color-blue">Ventas</h3>
+                </div>
+                <div class="uk-flex uk-flex-middle">
+                    <div style="margin-right: 10px;">
+                        <i class="fas fa-search color-blue" style="font-size: 15px; padding-right: 10px ; "></i>
+                    </div>
+                    <div>
+                        <form class="uk-search uk-search-medium">
+                            <input class="uk-search-input uk-text-light uk-text-left form-search-sales" type="search" placeholder="Buscador de productos">
+                        </form>
+                    </div>
+                    <div>
+                        <button class="button-search-sales uk-text-bold" style="margin-left: 15px;">Busqueda por categorías</button>
+                    </div>
+                </div>
+                <div class="uk-flex uk-flex-middle">
+                    <h6 class="uk-text-bold color-blue uk-margin-remove font-size-13">Recargar</h6>
+                </div>
+                <div style="margin-right: 20px;">
+                    <h6 class="uk-text-bold color-blue uk-margin-remove font-size-13">Cancelar</h6>
+                </div>
+            </div>
+            <div class="uk-flex">
+                <div class="drop-list-products-sales uk-width-3-5">
+                    <div>
+                        <h6 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-5 font-size-13">Nombre producto - código barras - código tienda</h6>
+                    </div>
+                    <div class="hr-tab-list"></div>
+                    <h6 class="uk-margin-remove uk-text-center padding-vertical-3 color-grey font-size-13">Papa golpe ranch yupi x 45gr - 7703133072533 - 770313307253345461</h6>
+                    <div class="hr-tab-list"></div>
+                    <h6 class="uk-margin-remove uk-text-center padding-vertical-3 color-grey font-size-13">Papa golpe ranch yupi x 45gr - 7703133072533 - 770313307253345461</h6>
+                    <div class="hr-tab-list"></div>
+                    <h6 class="uk-margin-remove uk-text-center padding-vertical-3 color-grey font-size-13">Papa golpe ranch yupi x 45gr - 7703133072533 - 770313307253345461</h6>
+                    <div class="hr-tab-list"></div>
+                    <h6 class="uk-margin-remove uk-text-center padding-vertical-3 color-grey font-size-13">Papa golpe ranch yupi x 45gr - 7703133072533 - 770313307253345461</h6>
+                    <div class="hr-tab-list"></div>
+                    <h6 class="uk-margin-remove uk-text-center padding-vertical-3 color-grey font-size-13">Papa golpe ranch yupi x 45gr - 7703133072533 - 770313307253345461</h6>
+                    <div class="hr-tab-list"></div>
+                    <h6 class="uk-margin-remove uk-text-center padding-vertical-3 color-grey font-size-13">Papa golpe ranch yupi x 45gr - 7703133072533 - 770313307253345461</h6>
+                    <div class="hr-tab-list"></div>
+                    <h6 class="uk-margin-remove uk-text-center padding-vertical-3 color-grey font-size-13">Papa golpe ranch yupi x 45gr - 7703133072533 - 770313307253345461</h6>
+                    <div class="hr-tab-list"></div>
+                    <h6 class="uk-margin-remove uk-text-center padding-vertical-3 color-grey font-size-13">Papa golpe ranch yupi x 45gr - 7703133072533 - 770313307253345461</h6>
+                    <div class="hr-tab-list"></div>
+                    <h6 class="uk-margin-remove uk-text-center padding-vertical-3 color-grey font-size-13">Papa golpe ranch yupi x 45gr - 7703133072533 - 770313307253345461</h6>
+                    <div class="hr-tab-list"></div>
+                    <h6 class="uk-margin-remove uk-text-center padding-vertical-3 color-grey font-size-13">Papa golpe ranch yupi x 45gr - 7703133072533 - 770313307253345461</h6>
+                </div>
+                <div class="uk-width-2-5">
+                    <div class="uk-flex uk-flex-center">
+                        <div class="uk-text-center" style="margin-right: 70px;">
+                            <div>
+                                <h3 class="uk-margin-remove uk-text-bold">Total</h3>
+                            </div>
+                            <div class="uk-flex uk-flex-middle">
+                                <h6 class="uk-margin-remove uk-text-bold">Subtotal</h6>
+                                <h6 class="uk-margin-remove uk-text-bold">$9,350</h6>
+                            </div>
+                        </div>
+                        <div class="uk-text-center">
+                            <div>
+                                <h3 class="uk-margin-remove uk-text-bold">$9,900</h3>
+                            </div>
+                            <div class="uk-flex uk-flex-middle">
+                                <h6 class="uk-margin-remove uk-text-bold">Impuesto</h6>
+                                <h6 class="uk-margin-remove uk-text-bold">$500</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-left: 80px; margin-top: 15px;">
+                        <div class="select-seller-sales">
+                            <select>
+                                <option>Sin vendedor</option>
+                                <option>opción 1</option>
+                                <option>opción 2</option>
+                                <option>opción 3</option>
+                                <option>opción 4</option>
+                            </select>
+                            <div class="select_arrow-seller-sales">
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="uk-margin-remove uk-text-muted font-size-12">Operaciones de confirmación</h6>
+                        </div>
+                    </div>
+                    <div class="uk-flex uk-flex-center" style="margin-top: 15px;">
+                        <div>
+                            <div class="uk-flex uk-flex-middle" style="margin-bottom: 5px;">
+                                <button class="buttons-total-sales uk-text-bold">Manual</button>
+                                <button class="buttons-total-sales uk-text-bold" style="margin-left: 5px;">Rápida con factura</button>
+                            </div>
+                            <div class="uk-flex uk-flex-center">
+                                <button class="buttons-total-sales" style="color: rgb(4, 179, 4) !important; font-weight: 800;">Rápida</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-product-select-sales">
+                <div class="uk-flex uk-flex-around">
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-bold uk-text-center">Código</h6>
+                    </div>
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-bold uk-text-center">Producto</h6>
+                    </div>
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-bold uk-text-center">Cantidad</h6>
+                    </div>
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-bold uk-text-center">Valor unitario</h6>
+                    </div>
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-bold uk-text-center">Impuesto</h6>
+                    </div>
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-bold uk-text-center">Total</h6>
+                    </div>
+                </div>
+                <div class="uk-flex uk-flex-around padding-vertical-10">
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">7703133086479</h6>
+                    </div>
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">Rizadas pollo x36gr</h6>
+                    </div>
+                    <div class="width-400">
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 5px;">
+                            <i class="fas fa-minus font-size-10 color-green-minus-plus"></i>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-green-minus-plus uk-text-bold">1</h6>
+                            <i class="fas fa-plus font-size-10 color-green-minus-plus"></i>
+                        </div>
+                        <div>
+                            <h6 class="uk-margin-remove uk-text-center font-size-11 uk-text-muted">Quitar</h6>
+                        </div>
+                    </div>
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">General - $1.500</h6>
+                    </div>
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">0%</h6>
+                    </div>
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">$1.500</h6>
+                    </div>
+                </div>
+                <div class="hr-tab-list"></div>
+                <div class="uk-flex uk-flex-around padding-vertical-10">
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">7703133086479</h6>
+                    </div>
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">Rizadas pollo x36gr</h6>
+                    </div>
+                    <div class="width-400">
+                        <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 5px;">
+                            <i class="fas fa-minus font-size-10 color-green-minus-plus"></i>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-green-minus-plus uk-text-bold">1</h6>
+                            <i class="fas fa-plus font-size-10 color-green-minus-plus"></i>
+                        </div>
+                        <div>
+                            <h6 class="uk-margin-remove uk-text-center font-size-11 uk-text-muted">Quitar</h6>
+                        </div>
+                    </div>
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">General - $1.500</h6>
+                    </div>
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">0%</h6>
+                    </div>
+                    <div class="width-400">
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">$1.500</h6>
+                    </div>
+                </div>
+                <div class="hr-tab-list"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
