@@ -274,6 +274,7 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 40px !important;
+    cursor: pointer;
 }
 
 .navbar-search-products-sales {
@@ -301,17 +302,17 @@
 }
 
 .drop-list-products-sales::-webkit-scrollbar-thumb {
-    background: #8c8c8c;
+    background: #afafaf;
     border: 8px none #ffffff;
     border-radius: 50px;
 }
 
 .drop-list-products-sales::-webkit-scrollbar-thumb:hover {
-    background: #8c8c8c;
+    background: #afafaf;
 }
 
 .drop-list-products-sales::-webkit-scrollbar-thumb:active {
-    background: #8c8c8c;
+    background: #afafaf;
 }
 
 .drop-list-products-sales::-webkit-scrollbar-track {
@@ -330,6 +331,17 @@
 
 .drop-list-products-sales::-webkit-scrollbar-corner {
     background: transparent;
+}
+
+.text-list-drop-sales {
+    color: rgb(156, 156, 156);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.text-list-drop-sales:hover {
+    background-color: rgb(187, 187, 187);
+    color: white;
 }
 
 .select-seller-sales {
@@ -393,9 +405,72 @@
     color: #0554bb;
     border-radius: 5px;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .navbar-product-select-sales {
     box-shadow: inset 0px 3px 5px 0px rgba(78, 78, 78, 0.25);
     padding-top: 15px;
+}
+
+.drop-option-cash-sales {
+    height: 250px;
+    width: 400px;
+    border: 1px solid rgba(153, 153, 153, 0.541);
+    background-color: white;
+    margin-left: 150px;
+    margin-top: 300px;
+    z-index: 200;
+    position: relative;
+}
+
+.button-option-cash-sales {
+    background-color: white;
+    border: none;
+    padding: 0px !important;
+    margin: 0px !important;
+    cursor: pointer;
+}
+
+.button-option-cash-sales:focus {
+    outline: 0;
+}
+
+.button-movements-cash-sales {
+    height: 35px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.button-movements-cash-sales:focus {
+    box-shadow: 8px 1px 8px -7px rgba(0, 0, 0, 0.25);
+    outline: 0;
+}
+
+.button-close-cash-sales {
+    height: 35px;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    margin-left: 5px;
+}
+
+.button-close-cash-sales:focus {
+    outline: 0;
+}
+
+.buttons-final-drop-movement-cash-sales {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(153, 153, 153);
+    background-color: white;
+    font-weight: 600;
+    color: blue;
+    border-top: 1px solid rgba(200, 200, 200, 0.466);
 }
