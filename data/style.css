@@ -414,12 +414,12 @@
 }
 
 .drop-option-cash-sales {
-    height: 250px;
+    height: 240px;
     width: 400px;
     border: 1px solid rgba(153, 153, 153, 0.541);
     background-color: white;
     margin-left: 150px;
-    margin-top: 300px;
+    margin-top: 310px;
     z-index: 200;
     position: relative;
 }
@@ -473,4 +473,36 @@
     font-weight: 600;
     color: blue;
     border-top: 1px solid rgba(200, 200, 200, 0.466);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.buttons-final-drop-movement-cash-sales:focus {
+    outline: 0;
+}
+
+.modal-other-movements-sales {
+    top: 200px;
+    background-color: white;
+    width: 580px !important;
+    height: 150px !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+}
+
+.width-450 {
+    width: 450px;
+}
+
+.button-return-sales {
+    border: 1px solid rgba(179, 179, 179, 0.781);
+    height: 30px;
+    width: 55px;
+    background-color: white;
+    color: #0554bb;
+    border-radius: 5px;
+    font-size: 11px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 55px;
 }

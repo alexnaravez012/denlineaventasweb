@@ -33,9 +33,9 @@
                         <div style="position: relative;">
                             <div class="drop-store-sales">
                                 <ul class="uk-list" style="padding-bottom: 20px;">
-                                    <h6 class=" uk-margin-remove font-size-10 padding-horizontal-20">Tienda seleccionada:</h6>
+                                    <h6 class=" uk-margin-remove font-size-10 padding-horizontal-20" style="padding-bottom: 5px;">Tienda seleccionada:</h6>
                                     <div class="hr-tab"></div>
-                                    <h5 class="uk-text-bold uk-margin-remove font-size-13 padding-horizontal-20" style="padding-top: 5px;">La Ferra</h5>
+                                    <h5 class="uk-text-bold uk-margin-remove font-size-13 padding-horizontal-20" style="padding-top: 10px;">La Ferra</h5>
                                     <div class="hr-tab"></div>
                                     <div class="padding-horizontal-25" style="margin-top: 35px;">
                                         <div class="uk-flex uk-flex-middle">
@@ -71,33 +71,68 @@
                         </div>
                         <div id="toggle-usage" class="drop-option-cash-sales" hidden>
                             <div class="uk-flex uk-flex-middle">
-                                <button class="button-movements-cash-sales uk-flex uk-flex-middle">
-                                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12">Movimientos de caja</h6>
-                                </button>
-                                <button class="button-close-cash-sales uk-flex uk-flex-middle">
-                                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12">Cierre de caja</h6>
-                                </button>
+                                <div uk-toggle="target: #toggle-usage1">
+                                    <button class="button-movements-cash-sales uk-flex uk-flex-middle">
+                                        <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12">Movimientos de caja</h6>
+                                    </button>
+                                </div>
+                                <div uk-toggle="target: #toggle-usage2">
+                                    <button class="button-close-cash-sales uk-flex uk-flex-middle">
+                                        <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12">Cierre de caja</h6>
+                                    </button>
+                                </div>
                             </div>
-                            <div style="margin-top: 10px;">
-                                <div class="padding-horizontal-25">
-                                    <h6 class="uk-margin-remove font-size-13 padding-vertical-3">Selecciona una opción</h6>
-                                    <h5 class="uk-margin-remove font-weight-500">Ingreso</h5>
+                            <div id="toggle-usage1">
+                                <div style="margin-top: 10px;">
+                                    <div class="padding-horizontal-25">
+                                        <h6 class="uk-margin-remove font-size-12 padding-vertical-3">Selecciona una opción</h6>
+                                        <h5 class="uk-margin-remove font-weight-500 font-size-14" style="padding-bottom: 2px;">Ingreso</h5>
+                                    </div>
+                                    <div class="hr-tab"></div>
+                                    <div class="padding-horizontal-25" style="margin-top: 10px;">
+                                        <h6 class="uk-margin-remove font-size-12 padding-vertical-3">Cantidad</h6>
+                                        <h5 class="uk-margin-remove font-weight-500 font-size-14" style="padding-bottom: 2px;">0$</h5>
+                                    </div>
+                                    <div class="hr-tab"></div>
+                                    <div class="padding-horizontal-25">
+                                        <h5 class="uk-margin-remove font-weight-500 font-size-14" style="padding-top: 10px; padding-bottom: 2px;">Notas</h5>
+                                    </div>
+                                    <div class="hr-tab"></div>
                                 </div>
-                                <div class="hr-tab"></div>
-                                <div class="padding-horizontal-25" style="margin-top: 10px;">
-                                    <h6 class="uk-margin-remove font-size-13 padding-vertical-3">Cantidad</h6>
-                                    <h5 class="uk-margin-remove font-weight-500">0$</h5>
+                                <div class="uk-flex uk-flex-middle uk-flex-around padding-horizontal-20" style="margin-top: 10px;">
+                                    <button class="buttons-final-drop-movement-cash-sales">Volver</button>
+                                    <button class="buttons-final-drop-movement-cash-sales" uk-toggle="target: #modal-movements-cash">Ver otros movimientos</button>
+                                    <div id="modal-movements-cash" uk-modal>
+                                        <div class="uk-modal-dialog modal-other-movements-sales">
+                                            <div class="uk-flex uk-flex-middle">
+                                                <i class="fas fa-times uk-modal-close cursor-pointer"></i>
+                                                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 padding-horizontal-30">Ver otros movimientos</h6>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <div style="margin-top: 15px;">
+                                                    <div class="uk-flex uk-flex-middle width-450">
+                                                        <h6 class="uk-margin-remove font-size-12 uk-text-center uk-text-bold width-150">Fecha</h6>
+                                                        <h6 class="uk-margin-remove font-size-12 uk-text-center uk-text-bold width-150">Tipo</h6>
+                                                        <h6 class="uk-margin-remove font-size-12 uk-text-center uk-text-bold width-150">Notas</h6>
+                                                        <h6 class="uk-margin-remove font-size-12 uk-text-center uk-text-bold width-150">Valor</h6>
+                                                    </div>
+                                                    <div class="uk-flex uk-flex-middle width-450" style="margin-top: 15px; margin-bottom: 8px;">
+                                                        <h6 class="uk-margin-remove font-size-12 uk-text-center color-grey width-150">2020-12-03 15:14:16</h6>
+                                                        <h6 class="uk-margin-remove font-size-12 uk-text-center color-grey width-150">Debito</h6>
+                                                        <h6 class="uk-margin-remove font-size-12 uk-text-center color-grey width-150">Base inicial</h6>
+                                                        <h6 class="uk-margin-remove font-size-12 uk-text-center color-grey width-150">$0.00</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hr-tab-list"></div>
+                                            <button class="uk-modal-close button-return-sales" type="button">Volver</button>
+                                        </div>
+                                    </div>
+                                    <button class="buttons-final-drop-movement-cash-sales" style="color: rgb(155, 155, 155);">Añadir Movimiento</button>
                                 </div>
-                                <div class="hr-tab"></div>
-                                <div class="padding-horizontal-25">
-                                    <h5 class="uk-margin-remove font-weight-500" style="padding-top: 10px ;">Notas</h5>
-                                </div>
-                                <div class="hr-tab"></div>
                             </div>
-                            <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 10px;">
-                                <button class="buttons-final-drop-movement-cash-sales">Volver</button>
-                                <button class="buttons-final-drop-movement-cash-sales">Ver otros movimientos</button>
-                                <button class="buttons-final-drop-movement-cash-sales" style="color: rgb(155, 155, 155);">Añadir Movimiento</button>
+                            <div id="toggle-usage2" hidden>
+                                otra ventana
                             </div>
                         </div>
                     </div>
@@ -294,35 +329,35 @@
             <div class="navbar-product-select-sales">
                 <div class="uk-flex uk-flex-around">
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-bold uk-text-center">Código</h6>
+                        <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12">Código</h6>
                     </div>
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-bold uk-text-center">Producto</h6>
+                        <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12">Producto</h6>
                     </div>
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-bold uk-text-center">Cantidad</h6>
+                        <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12">Cantidad</h6>
                     </div>
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-bold uk-text-center">Valor unitario</h6>
+                        <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12">Valor unitario</h6>
                     </div>
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-bold uk-text-center">Impuesto</h6>
+                        <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12">Impuesto</h6>
                     </div>
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-bold uk-text-center">Total</h6>
+                        <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12">Total</h6>
                     </div>
                 </div>
                 <div class="uk-flex uk-flex-around padding-vertical-10">
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">7703133086479</h6>
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-12" style="padding-top: 5px;">7703133086479</h6>
                     </div>
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">Rizadas pollo x36gr</h6>
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-12" style="padding-top: 5px;">Rizadas pollo x36gr</h6>
                     </div>
                     <div class="width-400">
                         <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 5px;">
                             <i class="fas fa-minus font-size-10 color-green-minus-plus cursor-pointer"></i>
-                            <h6 class="uk-margin-remove padding-horizontal-10 color-green-minus-plus uk-text-bold">1</h6>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-green-minus-plus uk-text-bold font-size-12">1</h6>
                             <i class="fas fa-plus font-size-10 color-green-minus-plus cursor-pointer"></i>
                         </div>
                         <div>
@@ -330,27 +365,27 @@
                         </div>
                     </div>
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">General - $1.500</h6>
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-12" style="padding-top: 5px;">General - $1.500</h6>
                     </div>
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">0%</h6>
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-12" style="padding-top: 5px;">0%</h6>
                     </div>
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">$1.500</h6>
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-12" style="padding-top: 5px;">$1.500</h6>
                     </div>
                 </div>
                 <div class="hr-tab-list"></div>
                 <div class="uk-flex uk-flex-around padding-vertical-10">
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">7703133086479</h6>
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-12" style="padding-top: 5px;">7703133086479</h6>
                     </div>
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">Rizadas pollo x36gr</h6>
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-12" style="padding-top: 5px;">Rizadas pollo x36gr</h6>
                     </div>
                     <div class="width-400">
                         <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 5px;">
                             <i class="fas fa-minus font-size-10 color-green-minus-plus cursor-pointer"></i>
-                            <h6 class="uk-margin-remove padding-horizontal-10 color-green-minus-plus uk-text-bold">1</h6>
+                            <h6 class="uk-margin-remove padding-horizontal-10 color-green-minus-plus uk-text-bold font-size-12">1</h6>
                             <i class="fas fa-plus font-size-10 color-green-minus-plus cursor-pointer"></i>
                         </div>
                         <div>
@@ -358,13 +393,13 @@
                         </div>
                     </div>
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">General - $1.500</h6>
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-12" style="padding-top: 5px;">General - $1.500</h6>
                     </div>
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">0%</h6>
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-12" style="padding-top: 5px;">0%</h6>
                     </div>
                     <div class="width-400">
-                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-13" style="padding-top: 5px;">$1.500</h6>
+                        <h6 class="uk-margin-remove uk-text-center color-grey font-size-12" style="padding-top: 5px;">$1.500</h6>
                     </div>
                 </div>
                 <div class="hr-tab-list"></div>
