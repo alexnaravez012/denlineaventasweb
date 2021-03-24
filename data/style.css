@@ -1,5 +1,5 @@
 .hr-tab {
-    border-bottom: 1px solid rgba(153, 153, 153, 0.685);
+    border-bottom: 1px solid rgba(175, 175, 175, 0.685);
 }
 
 .hr-tab-list {
@@ -277,6 +277,10 @@
     cursor: pointer;
 }
 
+.button-search-sales:focus {
+    outline: 0;
+}
+
 .navbar-search-products-sales {
     height: 60px;
     width: 850px;
@@ -408,6 +412,10 @@
     cursor: pointer;
 }
 
+.buttons-total-sales:focus {
+    outline: 0;
+}
+
 .navbar-product-select-sales {
     box-shadow: inset 0px 3px 5px 0px rgba(78, 78, 78, 0.25);
     padding-top: 15px;
@@ -439,7 +447,6 @@
 .button-movements-cash-sales {
     height: 35px;
     border: none;
-    padding-left: 20px;
     padding-right: 20px;
     cursor: pointer;
     background-color: white;
@@ -505,4 +512,178 @@
     cursor: pointer;
     margin-top: 10px;
     margin-left: 55px;
+}
+
+.button-return-sales:focus {
+    outline: 0;
+}
+
+.inputs-close-cash-sales {
+    border: none;
+    border-bottom: 1px solid rgba(161, 161, 161, 0.739);
+    width: 150px;
+}
+
+.inputs-close-cash-sales:focus {
+    outline: 0;
+}
+
+.buttons-close-cash-sales {
+    border: 1px solid rgba(179, 179, 179, 0.781);
+    height: 30px;
+    background-color: white;
+    color: #0554bb;
+    border-radius: 5px;
+    font-size: 11px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.buttons-close-cash-sales:focus {
+    outline: 0;
+}
+
+.most-selled-products-sales {
+    top: 50px;
+    background-color: white;
+    width: 550px !important;
+    height: 400px !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+}
+
+.width-275 {
+    width: 275px;
+}
+
+.img-size-bag-sales {
+    width: 42px;
+    height: 42px;
+}
+
+.text-img-bag-navbar-sales {
+    color: #3a6193;
+    left: 25px;
+    top: -32px;
+}
+
+.menu-vertical-categories-sales {
+    top: 135px;
+    padding-top: 10px;
+    width: 100px !important;
+    height: calc(100% - 80px) !important;
+    position: fixed;
+    z-index: 30 !important;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    box-shadow: 6px 0px 5px 0px rgba(0, 0, 0, 0.20);
+    background-color: white;
+}
+
+.menu-vertical-categories-sales::-webkit-scrollbar {
+    display: none;
+}
+
+.button-categories-menu-vertical-sales {
+    background-color: white;
+    border: none;
+    height: 90px;
+    width: 100px;
+    background-repeat: no-repeat !important;
+    background-size: 50%;
+    background-position: 100% auto;
+}
+
+.button-categories-menu-vertical-sales:hover {
+    background-color: #B1FFA6;
+}
+
+.button-categories-menu-vertical-sales:focus {
+    outline: 0;
+}
+
+.img-categories-menu-vertical-sales {
+    min-width: 60px;
+    max-width: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-size: 100% auto;
+    cursor: pointer;
+    margin-bottom: 10px !important;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.categories-menu-vertical-sales {
+    position: fixed !important;
+    margin: 0px !important;
+    transition-duration: 0s, 0s !important;
+}
+
+.box-categories-menu-vertical-sales {
+    height: 92px !important;
+    width: 560px !important;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid rgb(182, 182, 182);
+    border-left: none;
+    padding: 0px !important;
+    transition-duration: 0s, 0s !important;
+    margin: 0px !important;
+}
+
+.subcategories-menu-vertical-sales {
+    margin: 0px !important;
+    transition-duration: 0s, 0s !important;
+}
+
+.box-subcategories-menu-vertical-sales {
+    height: 195px !important;
+    width: 90px !important;
+    transition-duration: 0s, 0s !important;
+    background-color: white;
+    border: 1px solid rgb(182, 182, 182);
+    border-top: none;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.img-items-menu-scroll-sales {
+    min-width: 60px;
+    max-width: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-size: 100% auto;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.button-items-menu-categories-sales {
+    background-color: white;
+    border: none;
+    height: 90px;
+    width: 90px !important;
+    background-repeat: no-repeat !important;
+    background-size: 50%;
+    background-position: 100% auto;
+}
+
+.button-items-menu-categories-sales {
+    background-color: white;
+    border: none;
+    height: 90px;
+    width: 90px !important;
+    background-repeat: no-repeat !important;
+    background-size: 50%;
+    background-position: 100% auto;
+}
+
+.button-items-menu-categories-sales:hover {
+    background-color: #B1FFA6;
 }
