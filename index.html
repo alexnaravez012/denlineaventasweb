@@ -469,7 +469,7 @@
     <div style="display: inline;">
         <div class="main-container-sales">
             <!-- Subnavbar de busqueda -->
-            <div class="uk-flex uk-flex-middle uk-flex-between navbar-search-products-sales" style="position: fixed; z-index: 200; background-color: white;">
+            <div class="uk-flex uk-flex-middle uk-flex-between subnavbar-search-products-sales">
                 <div style=" margin-left: 50px; ">
                     <h3 class="uk-margin-remove uk-text-bold color-blue ">Ventas</h3>
                 </div>
@@ -580,701 +580,429 @@
                     </div>
                 </ul>
             </div>
-            <div>
-                <div class="main-container-products-selection-tables">
-                    <div class="uk-flex uk-flex-wrap uk-grid-small uk-grid-match" style="position: relative;" uk-grid>
-                        <div class="uk-card uk-card-default uk-card-body card-products-add-tables uk-flex" style="position: relative !important;;">
-                            <div class="uk-width-1-2" style="padding-top: 8px;">
-                                <div class="img-items-products-add-70-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+            <!-- Contenido -->
+            <div class="uk-flex">
+                <div class="main-container-products-selection-sales uk-flex uk-flex-wrap" style="position: relative;">
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-sales uk-flex" style="position: relative; margin-right: 80px;">
+                        <div class="uk-width-1-2" style="padding-top: 8px;">
+                            <div class="img-items-products-add-70-sales" style="background-image: url(./data/burguer.png);" uk-img></div>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                        </div>
+                        <h6 class="button-discount-card-sales" style="position: absolute;">-25%</h6>
+                        <div class="uk-width-1-2 uk-text-center">
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                            <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                            <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                                <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                                <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
+                                <i class="fas fa-plus font-size-12 cursor-pointer"></i>
                             </div>
-                            <h6 class="button-discount-card-tables" style="position: absolute;">-25%</h6>
-                            <div class="uk-width-1-2 uk-text-center">
-                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
-                                <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
-                                    <i class="fas fa-minus font-size-12 cursor-pointer"></i>
-                                    <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
-                                    <i class="fas fa-plus font-size-12 cursor-pointer"></i>
-                                </div>
-                                <Button class="button-card-add-product-tables font-size-10 uk-text-bold cursor-pointer">Agregar</Button>
-                                <div uk-toggle="target: .like-actives">
-                                    <img class="like-size-card-tables like-actives" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
-                                    <img class="like-size-card-tables like-actives" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
-                                </div>
+                            <button class="button-card-add-product-sales font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
+                            <div uk-toggle="target: .like-actives3">
+                                <img class="like-size-card-sales like-actives3" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
+                                <img class="like-size-card-sales like-actives3" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
                             </div>
                         </div>
-                        <div class="uk-card uk-card-default uk-card-body card-products-add-tables uk-flex" style="position: relative;">
-                            <div class="uk-width-1-2" style="padding-top: 8px;">
-                                <div class="img-items-products-add-70-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-sales uk-flex" style="position: relative; margin-right: 80px;">
+                        <div class="uk-width-1-2" style="padding-top: 8px;">
+                            <div class="img-items-products-add-70-sales" style="background-image: url(./data/burguer.png);" uk-img></div>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                        </div>
+                        <h6 class="button-discount-card-sales" style="position: absolute;">-25%</h6>
+                        <div class="uk-width-1-2 uk-text-center">
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                            <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                            <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                                <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                                <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
+                                <i class="fas fa-plus font-size-12 cursor-pointer"></i>
                             </div>
-                            <h6 class="button-discount-card-tables" style="position: absolute;">-25%</h6>
-                            <div class="uk-width-1-2 uk-text-center">
-                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
-                                <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
-                                    <i class="fas fa-minus font-size-12 cursor-pointer"></i>
-                                    <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
-                                    <i class="fas fa-plus font-size-12 cursor-pointer"></i>
-                                </div>
-                                <button class="button-card-add-product-tables font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
-                                <div uk-toggle="target: .like-actives1">
-                                    <img class="like-size-card-tables like-actives1" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
-                                    <img class="like-size-card-tables like-actives1" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
-                                </div>
+                            <BUtton class="button-card-add-product-sales font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
+                            <div uk-toggle="target: .like-actives4">
+                                <img class="like-size-card-sales like-actives4" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
+                                <img class="like-size-card-sales like-actives4" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
                             </div>
                         </div>
-                        <div class="uk-card uk-card-default uk-card-body card-products-add-tables uk-flex" style="position: relative;">
-                            <div class="uk-width-1-2" style="padding-top: 8px;">
-                                <div class="img-items-products-add-70-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-sales uk-flex" style="position: relative;">
+                        <div class="uk-width-1-2" style="padding-top: 8px;">
+                            <div class="img-items-products-add-70-sales" style="background-image: url(./data/burguer.png);" uk-img></div>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                        </div>
+                        <h6 class="button-discount-card-sales" style="position: absolute;">-25%</h6>
+                        <div class="uk-width-1-2 uk-text-center">
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                            <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                            <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                                <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                                <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
+                                <i class="fas fa-plus font-size-12 cursor-pointer"></i>
                             </div>
-                            <h6 class="button-discount-card-tables" style="position: absolute;">-25%</h6>
-                            <div class="uk-width-1-2 uk-text-center">
-                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
-                                <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
-                                    <i class="fas fa-minus font-size-12 cursor-pointer"></i>
-                                    <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
-                                    <i class="fas fa-plus font-size-12 cursor-pointer"></i>
-                                </div>
-                                <button class="button-card-add-product-tables font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
-                                <div uk-toggle="target: .like-actives2">
-                                    <img class="like-size-card-tables like-actives2" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
-                                    <img class="like-size-card-tables like-actives2" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
-                                </div>
+                            <button class="button-card-add-product-sales font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
+                            <div uk-toggle="target: .like-actives5">
+                                <img class="like-size-card-sales like-actives5" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
+                                <img class="like-size-card-sales like-actives5" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
                             </div>
                         </div>
-                        <div class="uk-card uk-card-default uk-card-body card-products-add-tables uk-flex" style="position: relative;">
-                            <div class="uk-width-1-2" style="padding-top: 8px;">
-                                <div class="img-items-products-add-70-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-sales uk-flex" style="position: relative; margin-right: 80px;">
+                        <div class="uk-width-1-2" style="padding-top: 8px;">
+                            <div class="img-items-products-add-70-sales" style="background-image: url(./data/burguer.png);" uk-img></div>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                        </div>
+                        <h6 class="button-discount-card-sales" style="position: absolute;">-25%</h6>
+                        <div class="uk-width-1-2 uk-text-center">
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                            <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                            <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                                <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                                <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
+                                <i class="fas fa-plus font-size-12 cursor-pointer"></i>
                             </div>
-                            <h6 class="button-discount-card-tables" style="position: absolute;">-25%</h6>
-                            <div class="uk-width-1-2 uk-text-center">
-                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
-                                <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
-                                    <i class="fas fa-minus font-size-12 cursor-pointer"></i>
-                                    <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
-                                    <i class="fas fa-plus font-size-12 cursor-pointer"></i>
-                                </div>
-                                <button class="button-card-add-product-tables font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
-                                <div uk-toggle="target: .like-actives3">
-                                    <img class="like-size-card-tables like-actives3" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
-                                    <img class="like-size-card-tables like-actives3" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
-                                </div>
+                            <button class="button-card-add-product-sales font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
+                            <div uk-toggle="target: .like-actives6">
+                                <img class="like-size-card-sales like-actives6" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
+                                <img class="like-size-card-sales like-actives6" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
                             </div>
                         </div>
-                        <div class="uk-card uk-card-default uk-card-body card-products-add-tables uk-flex" style="position: relative;">
-                            <div class="uk-width-1-2" style="padding-top: 8px;">
-                                <div class="img-items-products-add-70-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-sales uk-flex" style="position: relative; margin-right: 80px;">
+                        <div class="uk-width-1-2" style="padding-top: 8px;">
+                            <div class="img-items-products-add-70-sales" style="background-image: url(./data/burguer.png);" uk-img></div>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                        </div>
+                        <h6 class="button-discount-card-sales" style="position: absolute;">-25%</h6>
+                        <div class="uk-width-1-2 uk-text-center">
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                            <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                            <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                                <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                                <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
+                                <i class="fas fa-plus font-size-12 cursor-pointer"></i>
                             </div>
-                            <h6 class="button-discount-card-tables" style="position: absolute;">-25%</h6>
-                            <div class="uk-width-1-2 uk-text-center">
-                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
-                                <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
-                                    <i class="fas fa-minus font-size-12 cursor-pointer"></i>
-                                    <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
-                                    <i class="fas fa-plus font-size-12 cursor-pointer"></i>
-                                </div>
-                                <BUtton class="button-card-add-product-tables font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
-                                <div uk-toggle="target: .like-actives4">
-                                    <img class="like-size-card-tables like-actives4" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
-                                    <img class="like-size-card-tables like-actives4" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
-                                </div>
+                            <button class="button-card-add-product-sales font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
+                            <div uk-toggle="target: .like-actives7">
+                                <img class="like-size-card-sales like-actives7" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
+                                <img class="like-size-card-sales like-actives7" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
                             </div>
                         </div>
-                        <div class="uk-card uk-card-default uk-card-body card-products-add-tables uk-flex" style="position: relative;">
-                            <div class="uk-width-1-2" style="padding-top: 8px;">
-                                <div class="img-items-products-add-70-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-sales uk-flex" style="position: relative;">
+                        <div class="uk-width-1-2" style="padding-top: 8px;">
+                            <div class="img-items-products-add-70-sales" style="background-image: url(./data/burguer.png);" uk-img></div>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                        </div>
+                        <h6 class="button-discount-card-sales" style="position: absolute;">-25%</h6>
+                        <div class="uk-width-1-2 uk-text-center">
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                            <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                            <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                                <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                                <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
+                                <i class="fas fa-plus font-size-12 cursor-pointer"></i>
                             </div>
-                            <h6 class="button-discount-card-tables" style="position: absolute;">-25%</h6>
-                            <div class="uk-width-1-2 uk-text-center">
-                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
-                                <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
-                                    <i class="fas fa-minus font-size-12 cursor-pointer"></i>
-                                    <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
-                                    <i class="fas fa-plus font-size-12 cursor-pointer"></i>
-                                </div>
-                                <button class="button-card-add-product-tables font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
-                                <div uk-toggle="target: .like-actives5">
-                                    <img class="like-size-card-tables like-actives5" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
-                                    <img class="like-size-card-tables like-actives5" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
-                                </div>
+                            <button class="button-card-add-product-sales font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
+                            <div uk-toggle="target: .like-actives8">
+                                <img class="like-size-card-sales like-actives8" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
+                                <img class="like-size-card-sales like-actives8" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
                             </div>
                         </div>
-                        <div class="uk-card uk-card-default uk-card-body card-products-add-tables uk-flex" style="position: relative;">
-                            <div class="uk-width-1-2" style="padding-top: 8px;">
-                                <div class="img-items-products-add-70-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-sales uk-flex" style="position: relative; margin-right: 80px;">
+                        <div class="uk-width-1-2" style="padding-top: 8px;">
+                            <div class="img-items-products-add-70-sales" style="background-image: url(./data/burguer.png);" uk-img></div>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                        </div>
+                        <h6 class="button-discount-card-sales" style="position: absolute;">-25%</h6>
+                        <div class="uk-width-1-2 uk-text-center">
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                            <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                            <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                                <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                                <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
+                                <i class="fas fa-plus font-size-12 cursor-pointer"></i>
                             </div>
-                            <h6 class="button-discount-card-tables" style="position: absolute;">-25%</h6>
-                            <div class="uk-width-1-2 uk-text-center">
-                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
-                                <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
-                                    <i class="fas fa-minus font-size-12 cursor-pointer"></i>
-                                    <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
-                                    <i class="fas fa-plus font-size-12 cursor-pointer"></i>
-                                </div>
-                                <button class="button-card-add-product-tables font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
-                                <div uk-toggle="target: .like-actives6">
-                                    <img class="like-size-card-tables like-actives6" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
-                                    <img class="like-size-card-tables like-actives6" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
-                                </div>
+                            <button class="button-card-add-product-sales font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
+                            <div uk-toggle="target: .like-actives9">
+                                <img class="like-size-card-sales like-actives9" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
+                                <img class="like-size-card-sales like-actives9" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
                             </div>
                         </div>
-                        <div class="uk-card uk-card-default uk-card-body card-products-add-tables uk-flex" style="position: relative;">
-                            <div class="uk-width-1-2" style="padding-top: 8px;">
-                                <div class="img-items-products-add-70-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-sales uk-flex" style="position: relative; margin-right: 80px;">
+                        <div class="uk-width-1-2" style="padding-top: 8px;">
+                            <div class="img-items-products-add-70-sales" style="background-image: url(./data/burguer.png);" uk-img></div>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                        </div>
+                        <h6 class="button-discount-card-sales" style="position: absolute;">-25%</h6>
+                        <div class="uk-width-1-2 uk-text-center">
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                            <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                            <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                                <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                                <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
+                                <i class="fas fa-plus font-size-12 cursor-pointer"></i>
                             </div>
-                            <h6 class="button-discount-card-tables" style="position: absolute;">-25%</h6>
-                            <div class="uk-width-1-2 uk-text-center">
-                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
-                                <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
-                                    <i class="fas fa-minus font-size-12 cursor-pointer"></i>
-                                    <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
-                                    <i class="fas fa-plus font-size-12 cursor-pointer"></i>
-                                </div>
-                                <button class="button-card-add-product-tables font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
-                                <div uk-toggle="target: .like-actives7">
-                                    <img class="like-size-card-tables like-actives7" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
-                                    <img class="like-size-card-tables like-actives7" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
-                                </div>
+                            <button class="button-card-add-product-sales font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
+                            <div uk-toggle="target: .like-actives10">
+                                <img class="like-size-card-sales like-actives10" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
+                                <img class="like-size-card-sales like-actives10" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
                             </div>
                         </div>
-                        <div class="uk-card uk-card-default uk-card-body card-products-add-tables uk-flex" style="position: relative;">
-                            <div class="uk-width-1-2" style="padding-top: 8px;">
-                                <div class="img-items-products-add-70-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-sales uk-flex" style="position: relative;">
+                        <div class="uk-width-1-2" style="padding-top: 8px;">
+                            <div class="img-items-products-add-70-sales" style="background-image: url(./data/burguer.png);" uk-img></div>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                        </div>
+                        <h6 class="button-discount-card-sales" style="position: absolute;">-25%</h6>
+                        <div class="uk-width-1-2 uk-text-center">
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                            <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                            <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                                <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                                <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
+                                <i class="fas fa-plus font-size-12 cursor-pointer"></i>
                             </div>
-                            <h6 class="button-discount-card-tables" style="position: absolute;">-25%</h6>
-                            <div class="uk-width-1-2 uk-text-center">
-                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
-                                <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
-                                    <i class="fas fa-minus font-size-12 cursor-pointer"></i>
-                                    <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
-                                    <i class="fas fa-plus font-size-12 cursor-pointer"></i>
-                                </div>
-                                <button class="button-card-add-product-tables font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
-                                <div uk-toggle="target: .like-actives8">
-                                    <img class="like-size-card-tables like-actives8" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
-                                    <img class="like-size-card-tables like-actives8" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
-                                </div>
+                            <button class="button-card-add-product-sales font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
+                            <div uk-toggle="target: .like-actives11">
+                                <img class="like-size-card-sales like-actives11" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
+                                <img class="like-size-card-sales like-actives11" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
                             </div>
                         </div>
-                        <div class="uk-card uk-card-default uk-card-body card-products-add-tables uk-flex" style="position: relative;">
-                            <div class="uk-width-1-2" style="padding-top: 8px;">
-                                <div class="img-items-products-add-70-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-sales uk-flex" style="position: relative; margin-right: 80px;">
+                        <div class="uk-width-1-2" style="padding-top: 8px;">
+                            <div class="img-items-products-add-70-sales" style="background-image: url(./data/burguer.png);" uk-img></div>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                        </div>
+                        <h6 class="button-discount-card-sales" style="position: absolute;">-25%</h6>
+                        <div class="uk-width-1-2 uk-text-center">
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                            <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                            <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                                <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                                <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
+                                <i class="fas fa-plus font-size-12 cursor-pointer"></i>
                             </div>
-                            <h6 class="button-discount-card-tables" style="position: absolute;">-25%</h6>
-                            <div class="uk-width-1-2 uk-text-center">
-                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
-                                <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
-                                    <i class="fas fa-minus font-size-12 cursor-pointer"></i>
-                                    <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
-                                    <i class="fas fa-plus font-size-12 cursor-pointer"></i>
-                                </div>
-                                <button class="button-card-add-product-tables font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
-                                <div uk-toggle="target: .like-actives9">
-                                    <img class="like-size-card-tables like-actives9" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
-                                    <img class="like-size-card-tables like-actives9" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
-                                </div>
+                            <button class="button-card-add-product-sales font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
+                            <div uk-toggle="target: .like-actives11">
+                                <img class="like-size-card-sales like-actives11" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
+                                <img class="like-size-card-sales like-actives11" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
                             </div>
                         </div>
-                        <div class="uk-card uk-card-default uk-card-body card-products-add-tables uk-flex" style="position: relative;">
-                            <div class="uk-width-1-2" style="padding-top: 8px;">
-                                <div class="img-items-products-add-70-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-sales uk-flex" style="position: relative; margin-right: 80px;">
+                        <div class="uk-width-1-2" style="padding-top: 8px;">
+                            <div class="img-items-products-add-70-sales" style="background-image: url(./data/burguer.png);" uk-img></div>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                        </div>
+                        <h6 class="button-discount-card-sales" style="position: absolute;">-25%</h6>
+                        <div class="uk-width-1-2 uk-text-center">
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                            <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                            <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                                <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                                <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
+                                <i class="fas fa-plus font-size-12 cursor-pointer"></i>
                             </div>
-                            <h6 class="button-discount-card-tables" style="position: absolute;">-25%</h6>
-                            <div class="uk-width-1-2 uk-text-center">
-                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
-                                <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
-                                    <i class="fas fa-minus font-size-12 cursor-pointer"></i>
-                                    <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
-                                    <i class="fas fa-plus font-size-12 cursor-pointer"></i>
-                                </div>
-                                <button class="button-card-add-product-tables font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
-                                <div uk-toggle="target: .like-actives10">
-                                    <img class="like-size-card-tables like-actives10" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
-                                    <img class="like-size-card-tables like-actives10" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
-                                </div>
+                            <button class="button-card-add-product-sales font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
+                            <div uk-toggle="target: .like-actives11">
+                                <img class="like-size-card-sales like-actives11" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
+                                <img class="like-size-card-sales like-actives11" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
                             </div>
                         </div>
-                        <div class="uk-card uk-card-default uk-card-body card-products-add-tables uk-flex" style="position: relative;">
-                            <div class="uk-width-1-2" style="padding-top: 8px;">
-                                <div class="img-items-products-add-70-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-sales uk-flex" style="position: relative;">
+                        <div class="uk-width-1-2" style="padding-top: 8px;">
+                            <div class="img-items-products-add-70-sales" style="background-image: url(./data/burguer.png);" uk-img></div>
+                            <h5 class="uk-margin-remove font-size-12 uk-text-muted" style="padding-top: 5px; padding-left: 13px;">15.000$</h5>
+                        </div>
+                        <h6 class="button-discount-card-sales" style="position: absolute;">-25%</h6>
+                        <div class="uk-width-1-2 uk-text-center">
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
+                            <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
+                            <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
+                                <i class="fas fa-minus font-size-12 cursor-pointer"></i>
+                                <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
+                                <i class="fas fa-plus font-size-12 cursor-pointer"></i>
                             </div>
-                            <h6 class="button-discount-card-tables" style="position: absolute;">-25%</h6>
-                            <div class="uk-width-1-2 uk-text-center">
-                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Hamburguesa 1</h6>
-                                <h6 class="uk-margin-remove font-size-9">Lorem ipsum dolor sitamet, consectetuer adipiscing elit.</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 5px;">
-                                    <i class="fas fa-minus font-size-12 cursor-pointer"></i>
-                                    <h6 class="uk-margin-remove padding-horizontal-10 color-blue font-size-11">1</h6>
-                                    <i class="fas fa-plus font-size-12 cursor-pointer"></i>
-                                </div>
-                                <button class="button-card-add-product-tables font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
-                                <div uk-toggle="target: .like-actives11">
-                                    <img class="like-size-card-tables like-actives11" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
-                                    <img class="like-size-card-tables like-actives11" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
-                                </div>
+                            <button class="button-card-add-product-sales font-size-10 uk-text-bold cursor-pointer">Agregar</BUtton>
+                            <div uk-toggle="target: .like-actives11">
+                                <img class="like-size-card-sales like-actives11" src="./data/Like-desactivado.png" style="position: absolute;" alt="">
+                                <img class="like-size-card-sales like-actives11" src="./data/Like-activado.png" style="position: absolute;" alt="" hidden>
                             </div>
                         </div>
-                        <div class="info-float-select-products-tables" uk-toggle="target: #place-order">
-                            <div class="uk-flex uk-flex-middle">
-                                <h5 class="uk-margin-remove uk-text-bold font-size-12">0</h5>
-                                <div class="uk-text-center" style="margin-left:20px ;">
-                                    <h6 class="uk-margin-remove font-size-12">80</h6>
-                                    <h6 class="uk-margin-remove uk-text-bold font-size-12 cursor-pointer">Concretar pedido</h6>
-                                    <div id="place-order" uk-modal>
-                                        <div class="uk-modal-dialog uk-modal-body modal-add-products-order-tables">
-                                            <div class="uk-flex uk-flex-middle padding-horizontal-30 padding-vertical-10">
-                                                <h4 class="uk-margin-remove color-blue uk-text-bold">Concretar pedido</h4>
-                                                <button class="uk-modal-close-default" type="button" uk-close></button>
-                                            </div>
-                                            <div class="uk-flex uk-flex-wrap uk-flex-around modal-order-tables">
-                                                <div class="uk-flex uk-flex-middle uk-flex-around modal-sizes-order-tables">
-                                                    <div class="uk-width-1-3">
-                                                        <div class="img-items-products-add-90-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                                    </div>
-                                                    <div class="uk-width-1-1" style="padding-left: 10px;">
-                                                        <div class="uk-flex uk-flex-middle">
-                                                            <div>
-                                                                <h5 class="uk-margin-remove uk-text-bold color-blue">Hamburguesa 1</h5>
-                                                                <h5 class="uk-margin-remove font-weight-500">15.000$</h5>
-                                                            </div>
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle" style="padding-left: 20px;">
-                                                                    <i class="fas fa-minus color-green font-size-15 cursor-pointer"></i>
-                                                                    <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-15">1</h6>
-                                                                    <i class="fas fa-plus color-green font-size-15 cursor-pointer"></i>
-                                                                </div>
-                                                                <h6 class="uk-margin-remove uk-text-center font-size-12" style="padding-left: 25px;">Quitar</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="uk-flex uk-flex-middle" style="padding-top: 10px;">
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Salsa</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Adicionales</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div style="padding-left: 20px;">
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Verduras</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Papas</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-container-products-selection-second-sales">
+                        <div>
+                            <h6 class="uk-margin-remove uk-text-bold font-size-11">Productos relacionados</h6>
+                            <div class="related-products-box-sales padding-horizontal-10">
+                                <div class="padding-horizontal-30 padding-vertical-10">
+                                    <div class="padding-vertical-5">
+                                        <h6 class="uk-margin-remove uk-text-bold font-size-14 color-blue">Hamburguesa 1</h6>
+                                        <h6 class="uk-margin-remove uk-text-bold font-size-13">15.000$</h6>
+                                    </div>
+                                    <div class="uk-flex" style="margin-bottom: 10px;">
+                                        <div class="uk-flex uk-flex-middle">
+                                            <div style="margin-right: 30px;">
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12">Salsas</h6>
+                                                    <i class="fas fa-caret-down" style="margin-left: 5px;"></i>
                                                 </div>
-                                                <div class="uk-flex uk-flex-middle uk-flex-around modal-sizes-order-tables">
-                                                    <div class="uk-width-1-3">
-                                                        <div class="img-items-products-add-90-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                                    </div>
-                                                    <div class="uk-width-1-1" style="padding-left: 10px;">
-                                                        <div class="uk-flex uk-flex-middle">
-                                                            <div>
-                                                                <h5 class="uk-margin-remove uk-text-bold color-blue">Hamburguesa 1</h5>
-                                                                <h5 class="uk-margin-remove font-weight-500">15.000$</h5>
-                                                            </div>
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle" style="padding-left: 20px;">
-                                                                    <i class="fas fa-minus color-green font-size-15 cursor-pointer"></i>
-                                                                    <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-15">1</h6>
-                                                                    <i class="fas fa-plus color-green font-size-15 cursor-pointer"></i>
-                                                                </div>
-                                                                <h6 class="uk-margin-remove uk-text-center font-size-12" style="padding-left: 25px;">Quitar</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="uk-flex uk-flex-middle" style="padding-top: 10px;">
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Salsa</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Adicionales</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div style="padding-left: 20px;">
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Verduras</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Papas</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="uk-flex uk-flex-middle uk-flex-around modal-sizes-order-tables">
-                                                    <div class="uk-width-1-3">
-                                                        <div class="img-items-products-add-90-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                                    </div>
-                                                    <div class="uk-width-1-1" style="padding-left: 10px;">
-                                                        <div class="uk-flex uk-flex-middle">
-                                                            <div>
-                                                                <h5 class="uk-margin-remove uk-text-bold color-blue">Hamburguesa 1</h5>
-                                                                <h5 class="uk-margin-remove font-weight-500">15.000$</h5>
-                                                            </div>
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle" style="padding-left: 20px;">
-                                                                    <i class="fas fa-minus color-green font-size-15 cursor-pointer"></i>
-                                                                    <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-15">1</h6>
-                                                                    <i class="fas fa-plus color-green font-size-15 cursor-pointer"></i>
-                                                                </div>
-                                                                <h6 class="uk-margin-remove uk-text-center font-size-12" style="padding-left: 25px;">Quitar</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="uk-flex uk-flex-middle" style="padding-top: 10px;">
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Salsa</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Adicionales</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div style="padding-left: 20px;">
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Verduras</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Papas</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="uk-flex uk-flex-middle uk-flex-around modal-sizes-order-tables">
-                                                    <div class="uk-width-1-3">
-                                                        <div class="img-items-products-add-90-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                                    </div>
-                                                    <div class="uk-width-1-1" style="padding-left: 10px;">
-                                                        <div class="uk-flex uk-flex-middle">
-                                                            <div>
-                                                                <h5 class="uk-margin-remove uk-text-bold color-blue">Hamburguesa 1</h5>
-                                                                <h5 class="uk-margin-remove font-weight-500">15.000$</h5>
-                                                            </div>
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle" style="padding-left: 20px;">
-                                                                    <i class="fas fa-minus color-green font-size-15 cursor-pointer"></i>
-                                                                    <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-15">1</h6>
-                                                                    <i class="fas fa-plus color-green font-size-15 cursor-pointer"></i>
-                                                                </div>
-                                                                <h6 class="uk-margin-remove uk-text-center font-size-12" style="padding-left: 25px;">Quitar</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="uk-flex uk-flex-middle" style="padding-top: 10px;">
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Salsa</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Adicionales</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div style="padding-left: 20px;">
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Verduras</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Papas</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="uk-flex uk-flex-middle uk-flex-around modal-sizes-order-tables">
-                                                    <div class="uk-width-1-3">
-                                                        <div class="img-items-products-add-90-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                                    </div>
-                                                    <div class="uk-width-1-1" style="padding-left: 10px;">
-                                                        <div class="uk-flex uk-flex-middle">
-                                                            <div>
-                                                                <h5 class="uk-margin-remove uk-text-bold color-blue">Hamburguesa 1</h5>
-                                                                <h5 class="uk-margin-remove font-weight-500">15.000$</h5>
-                                                            </div>
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle" style="padding-left: 20px;">
-                                                                    <i class="fas fa-minus color-green font-size-15 cursor-pointer"></i>
-                                                                    <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-15">1</h6>
-                                                                    <i class="fas fa-plus color-green font-size-15 cursor-pointer"></i>
-                                                                </div>
-                                                                <h6 class="uk-margin-remove uk-text-center font-size-12" style="padding-left: 25px;">Quitar</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="uk-flex uk-flex-middle" style="padding-top: 10px;">
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Salsa</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Adicionales</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div style="padding-left: 20px;">
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Verduras</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Papas</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="uk-flex uk-flex-middle uk-flex-around modal-sizes-order-tables">
-                                                    <div class="uk-width-1-3">
-                                                        <div class="img-items-products-add-90-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                                    </div>
-                                                    <div class="uk-width-1-1" style="padding-left: 10px;">
-                                                        <div class="uk-flex uk-flex-middle">
-                                                            <div>
-                                                                <h5 class="uk-margin-remove uk-text-bold color-blue">Hamburguesa 1</h5>
-                                                                <h5 class="uk-margin-remove font-weight-500">15.000$</h5>
-                                                            </div>
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle" style="padding-left: 20px;">
-                                                                    <i class="fas fa-minus color-green font-size-15 cursor-pointer"></i>
-                                                                    <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-15">1</h6>
-                                                                    <i class="fas fa-plus color-green font-size-15 cursor-pointer"></i>
-                                                                </div>
-                                                                <h6 class="uk-margin-remove uk-text-center font-size-12" style="padding-left: 25px;">Quitar</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="uk-flex uk-flex-middle" style="padding-top: 10px;">
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Salsa</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Adicionales</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div style="padding-left: 20px;">
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Verduras</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Papas</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="uk-flex uk-flex-middle uk-flex-around modal-sizes-order-tables">
-                                                    <div class="uk-width-1-3">
-                                                        <div class="img-items-products-add-90-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                                    </div>
-                                                    <div class="uk-width-1-1" style="padding-left: 10px;">
-                                                        <div class="uk-flex uk-flex-middle">
-                                                            <div>
-                                                                <h5 class="uk-margin-remove uk-text-bold color-blue">Hamburguesa 1</h5>
-                                                                <h5 class="uk-margin-remove font-weight-500">15.000$</h5>
-                                                            </div>
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle" style="padding-left: 20px;">
-                                                                    <i class="fas fa-minus color-green font-size-15 cursor-pointer"></i>
-                                                                    <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-15">1</h6>
-                                                                    <i class="fas fa-plus color-green font-size-15 cursor-pointer"></i>
-                                                                </div>
-                                                                <h6 class="uk-margin-remove uk-text-center font-size-12" style="padding-left: 25px;">Quitar</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="uk-flex uk-flex-middle" style="padding-top: 10px;">
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Salsa</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Adicionales</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div style="padding-left: 20px;">
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Verduras</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Papas</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="uk-flex uk-flex-middle uk-flex-around modal-sizes-order-tables">
-                                                    <div class="uk-width-1-3">
-                                                        <div class="img-items-products-add-90-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                                    </div>
-                                                    <div class="uk-width-1-1" style="padding-left: 10px;">
-                                                        <div class="uk-flex uk-flex-middle">
-                                                            <div>
-                                                                <h5 class="uk-margin-remove uk-text-bold color-blue">Hamburguesa 1</h5>
-                                                                <h5 class="uk-margin-remove font-weight-500">15.000$</h5>
-                                                            </div>
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle" style="padding-left: 20px;">
-                                                                    <i class="fas fa-minus color-green font-size-15 cursor-pointer"></i>
-                                                                    <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-15">1</h6>
-                                                                    <i class="fas fa-plus color-green font-size-15 cursor-pointer"></i>
-                                                                </div>
-                                                                <h6 class="uk-margin-remove uk-text-center font-size-12" style="padding-left: 25px;">Quitar</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="uk-flex uk-flex-middle" style="padding-top: 10px;">
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Salsa</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Adicionales</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div style="padding-left: 20px;">
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Verduras</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Papas</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="uk-flex uk-flex-middle uk-flex-around modal-sizes-order-tables">
-                                                    <div class="uk-width-1-3">
-                                                        <div class="img-items-products-add-90-tables" style="background-image: url(./data/burguer.png);" uk-img></div>
-                                                    </div>
-                                                    <div class="uk-width-1-1" style="padding-left: 10px;">
-                                                        <div class="uk-flex uk-flex-middle">
-                                                            <div>
-                                                                <h5 class="uk-margin-remove uk-text-bold color-blue">Hamburguesa 1</h5>
-                                                                <h5 class="uk-margin-remove font-weight-500">15.000$</h5>
-                                                            </div>
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle" style="padding-left: 20px;">
-                                                                    <i class="fas fa-minus color-green font-size-15 cursor-pointer"></i>
-                                                                    <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-15">1</h6>
-                                                                    <i class="fas fa-plus color-green font-size-15 cursor-pointer"></i>
-                                                                </div>
-                                                                <h6 class="uk-margin-remove uk-text-center font-size-12" style="padding-left: 25px;">Quitar</h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="uk-flex uk-flex-middle" style="padding-top: 10px;">
-                                                            <div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Salsa</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Adicionales</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div style="padding-left: 20px;">
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Verduras</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                                <div class="uk-flex uk-flex-middle">
-                                                                    <h6 class="uk-margin-remove font-weight-500">Papas</h6>
-                                                                    <i class="fas fa-caret-down cursor-pointer" style="padding-left: 5px;"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12">Adicionales</h6>
+                                                    <i class="fas fa-caret-down" style="margin-left: 5px;"></i>
                                                 </div>
                                             </div>
-                                            <div class="modal-total-order-shadow-tables">
-                                                <div class="uk-flex uk-flex-center uk-flex-middle">
-                                                    <h3 class="uk-margin-remove uk-text-bold color-blue" style="padding-right: 5px;">Cantidad de productos:</h3>
-                                                    <h4 class=" uk-margin-remove font-weight-500 ">2</h4>
+                                            <div>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12">Verduras</h6>
+                                                    <i class="fas fa-caret-down" style="margin-left: 5px;"></i>
                                                 </div>
-                                                <div class=" uk-flex uk-flex-middle uk-flex-center ">
-                                                    <h3 class="uk-margin-remove uk-text-bold color-blue " style="padding-right: 5px; ">Total:</h3>
-                                                    <h4 class="uk-margin-remove font-weight-500 ">35.000$</h4>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12">Papas:</h6>
+                                                    <h6 class="uk-margin-remove uk-text-light font-size-12" style="padding-left: 5px;">Si</h6>
                                                 </div>
-                                                <div class="uk-flex uk-flex-center " style="padding-bottom: 20px; padding-top: 10px; ">
-                                                    <button class="button-modal-accept-order-tables">Aceptar</button>
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 30px;">
+                                            <div class="uk-flex uk-flex-middle uk-flex-center">
+                                                <i class="fas fa-minus font-size-10 color-green-minus-plus cursor-pointer"></i>
+                                                <h6 class="uk-margin-remove padding-horizontal-20 color-green-minus-plus uk-text-bold font-size-12">1</h6>
+                                                <i class="fas fa-plus font-size-10 color-green-minus-plus cursor-pointer"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="uk-margin-remove font-size-11 uk-text-muted uk-text-center">Quitar</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hr-tab"></div>
+                                <div class="padding-horizontal-30 padding-vertical-10">
+                                    <div class="padding-vertical-5">
+                                        <h6 class="uk-margin-remove uk-text-bold font-size-14 color-blue">Hamburguesa 2</h6>
+                                        <h6 class="uk-margin-remove uk-text-bold font-size-13">15.000$</h6>
+                                    </div>
+                                    <div class="uk-flex" style="margin-bottom: 10px;">
+                                        <div class="uk-flex uk-flex-middle">
+                                            <div style="margin-right: 30px;">
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12">Salsas</h6>
+                                                    <i class="fas fa-caret-down" style="margin-left: 5px;"></i>
                                                 </div>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12">Adicionales</h6>
+                                                    <i class="fas fa-caret-down" style="margin-left: 5px;"></i>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12">Verduras</h6>
+                                                    <i class="fas fa-caret-down" style="margin-left: 5px;"></i>
+                                                </div>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12">Papas:</h6>
+                                                    <h6 class="uk-margin-remove uk-text-light font-size-12" style="padding-left: 5px;">Si</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 30px;">
+                                            <div class="uk-flex uk-flex-middle uk-flex-center">
+                                                <i class="fas fa-minus font-size-10 color-green-minus-plus cursor-pointer"></i>
+                                                <h6 class="uk-margin-remove padding-horizontal-20 color-green-minus-plus uk-text-bold font-size-12">1</h6>
+                                                <i class="fas fa-plus font-size-10 color-green-minus-plus cursor-pointer"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="uk-margin-remove font-size-11 uk-text-muted uk-text-center">Quitar</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hr-tab"></div>
+                                <div class="padding-horizontal-30 padding-vertical-10">
+                                    <div class="padding-vertical-5">
+                                        <h6 class="uk-margin-remove uk-text-bold font-size-14 color-blue">Hamburguesa 3</h6>
+                                        <h6 class="uk-margin-remove uk-text-bold font-size-13">15.000$</h6>
+                                    </div>
+                                    <div class="uk-flex" style="margin-bottom: 10px;">
+                                        <div class="uk-flex uk-flex-middle">
+                                            <div style="margin-right: 30px;">
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12">Salsas</h6>
+                                                    <i class="fas fa-caret-down" style="margin-left: 5px;"></i>
+                                                </div>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12">Adicionales</h6>
+                                                    <i class="fas fa-caret-down" style="margin-left: 5px;"></i>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12">Verduras</h6>
+                                                    <i class="fas fa-caret-down" style="margin-left: 5px;"></i>
+                                                </div>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12">Papas:</h6>
+                                                    <h6 class="uk-margin-remove uk-text-light font-size-12" style="padding-left: 5px;">Si</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 30px;">
+                                            <div class="uk-flex uk-flex-middle uk-flex-center">
+                                                <i class="fas fa-minus font-size-10 color-green-minus-plus cursor-pointer"></i>
+                                                <h6 class="uk-margin-remove padding-horizontal-20 color-green-minus-plus uk-text-bold font-size-12">1</h6>
+                                                <i class="fas fa-plus font-size-10 color-green-minus-plus cursor-pointer"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="uk-margin-remove font-size-11 uk-text-muted uk-text-center">Quitar</h6>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="menu-right-vertical-tables">
-                        <ul class="uk-list">
-                            <h6 class="uk-margon remove font-size-10 uk-text-bold ">Productos relacionados con este artículo</h6>
-                            <div class="uk-flex uk-flex-middle">
-                                <div class=" uk-margin-remove-bottom img-menu-right-vertical-tables" style="background-image: url(./data/burguer.png); " uk-img></div>
-                                <h6 class="uk-margin-remove font-size-10 " style="padding-left: 5px; ">Hamburguesa 2</h6>
+                        <div class="uk-flex uk-flex-middle padding-vertical-3" style="padding-left: 42px;">
+                            <h6 class="uk-margin-remove font-size-9 uk-text-muted">Numero de items:</h6>
+                            <h6 class="uk-margin-remove font-size-9 uk-text-muted">3</h6>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around padding-vertical-10">
+                            <div>
+                                <h3 class="uk-margin-remove uk-text-bold">Total</h3>
+                                <div class="uk-flex uk-flex-middle">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Subtotal</h6>
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12 padding-horizontal-5">$55,000</h6>
+                                </div>
                             </div>
-                            <div class="uk-flex uk-flex-middle">
-                                <div class=" uk-margin-remove-bottom img-menu-right-vertical-tables" style="background-image: url(./data/burguer.png); " uk-img></div>
-                                <h6 class="uk-margin-remove font-size-10 " style="padding-left: 5px; ">Hamburguesa 3</h6>
+                            <div>
+                                <h3 class="uk-margin-remove uk-text-bold">$55,000</h3>
+                                <div class="uk-flex uk-flex-middle">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Impuesto</h6>
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12 padding-horizontal-5">$0</h6>
+                                </div>
                             </div>
-                            <div class="uk-flex uk-flex-middle">
-                                <div class=" uk-margin-remove-bottom img-menu-right-vertical-tables" style="background-image: url(./data/burguer.png); " uk-img></div>
-                                <h6 class="uk-margin-remove font-size-10 " style="padding-left: 5px; ">Hamburguesa 4</h6>
+                        </div>
+                        <div class="select-seller-sales" style="margin-left: 36px;">
+                            <select>
+                                <option>Sin vendedor</option>
+                                <option>opción 1</option>
+                                <option>opción 2</option>
+                                <option>opción 3</option>
+                                <option>opción 4</option>
+                            </select>
+                            <div class="select_arrow-seller-sales">
                             </div>
-                            <div class="uk-flex uk-flex-middle">
-                                <div class=" uk-margin-remove-bottom img-menu-right-vertical-tables" style="background-image: url(./data/burguer.png); " uk-img></div>
-                                <h6 class="uk-margin-remove font-size-10 " style="padding-left: 5px; ">Hamburguesa 5</h6>
+                        </div>
+                        <div style="margin-top: 15px; margin-left: 25px;">
+                            <div class="uk-flex uk-flex-middle" style="margin-bottom: 5px;">
+                                <button class="buttons-total-sales uk-text-bold" style="font-size: 10px !important; width: 80px !important; margin-right: 5px;">Manual</button>
+                                <button class="buttons-total-sales uk-text-bold" style="font-size: 10px !important; width: 120px !important; margin-right: 5px;">Rápida con factura</button>
+                                <button class="buttons-total-sales" style="font-size: 10px !important; width: 80px !important;color: rgb(4, 179, 4) !important; font-weight: 800;">Rápida</button>
                             </div>
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>
