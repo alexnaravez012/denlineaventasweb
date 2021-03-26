@@ -281,7 +281,7 @@
         </div>
     </div>
     <!-- Busqueda por lista -->
-    <div style="display: none;">
+    <div style="display: inline;">
         <!-- Contenido  -->
         <div class="main-container-sales">
             <!-- Subnavbar de busqueda -->
@@ -375,7 +375,105 @@
                     <div class="uk-flex uk-flex-center" style="margin-top: 15px;">
                         <div>
                             <div class="uk-flex uk-flex-middle" style="margin-bottom: 5px;">
-                                <button class="buttons-total-sales uk-text-bold">Manual</button>
+                                <button class="buttons-total-sales uk-text-bold" uk-toggle="target: #manual-billing">Manual</button>
+                                <div id="manual-billing" uk-modal>
+                                    <div class="uk-modal-dialog modal-manual-billing-sales">
+                                        <div class="padding-horizontal-30  box-shadow-down-sales" style="padding-top: 10px;">
+                                            <h4 class="uk-margin-remove color-blue uk-text-bold padding-vertical-10">Transacción Manual</h4>
+                                            <div class="uk-flex uk-flex-middle">
+                                                <div>
+                                                    <h6 class="uk-margin-remove font-weight-500 font-size-13">Tipo de cliente:</h6>
+                                                </div>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove">Cliente específico</h6>
+                                                    <i class="fas fa-caret-down"></i>
+                                                </div>
+                                            </div>
+                                            <div class="uk-flex">
+                                                <div>
+                                                    <div class="uk-flex uk-flex-middle padding-vertical-10">
+                                                        <div>
+                                                            <h6 class="uk-margin-remove font-size-11 color-grey">Cédula del cliente:</h6>
+                                                        </div>
+                                                        <div>
+                                                            <input class="inputs-manual-billing-sales" style="margin-left: 10px; margin-right: 10px;" type="text">
+                                                        </div>
+                                                        <div>
+                                                            <button class="buttons-close-cash-sales" style="height: 25px !important;">Buscar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-flex uk-flex-middle" style="margin-top: 30px;">
+                                                        <div style="margin-right: 40px;">
+                                                            <h6 class="uk-margin-remove uk-text-bold">Subtotal</h6>
+                                                            <h6 class="uk-margin-remove font-size-11 color-grey">Porcentaje descuento</h6>
+                                                            <input class="inputs-manual-billing-sales" type="text">
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="uk-margin-remove uk-text-bold">$9,267</h6>
+                                                            <h6 class="uk-margin-remove font-size-11 color-grey">Valor descuento</h6>
+                                                            <input class="inputs-manual-billing-sales" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-flex uk-flex-middle padding-vertical-10">
+                                                        <div>
+                                                            <h6 class="uk-margin-remove font-weight-500 font-size-13">Método de pago:</h6>
+                                                        </div>
+                                                        <div class="uk-flex uk-flex-middle">
+                                                            <h6 class="uk-margin-remove">Efectivo</h6>
+                                                            <i class="fas fa-caret-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style="margin-left: 50px;">
+                                                    <h5 class="uk-margin-remove uk-text-bold">LUIS CARLOS MOLANO</h5>
+                                                    <div class="uk-flex" style=" margin-top: 50px;">
+                                                        <h4 class="uk-margin-remove uk-text-bold">Total</h4>
+                                                        <h6 class="uk-margin-remove font-size-11 color-grey padding-horizontal-5" style="padding-top: 11px;">Con descuento</h6>
+                                                    </div>
+                                                    <h3 class="uk-margin-remove uk-text-bold">$8,800</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="margin-top: 20px;">
+                                            <div style="margin-left:30px ;">
+                                                <img class="image-bill-icons-sales" src="./data/money/anverso-1000.png" alt="">
+                                                <img class="image-bill-icons-sales" src="./data/money/anverso2000.jpg" alt="">
+                                                <img class="image-bill-icons-sales" src="./data/money/anverso5000.png" alt="">
+                                                <img class="image-bill-icons-sales" src="./data/money/anverso10000.jpg" alt="">
+                                                <img class="image-bill-icons-sales" src="./data/money/anverso20000.png" alt="">
+                                                <img class="image-bill-icons-sales" src="./data/money/anverso50000.png" alt="">
+                                            </div>
+                                            <div style="margin-left:30px ;">
+                                                <img class="image-coin-icons-sales" src="./data/money/50.png" alt="">
+                                                <img class="image-coin-icons-sales" src="./data/money/100.png" alt="">
+                                                <img class="image-coin-icons-sales" style="height: 52px; width:52px ;" src="./data/money/200.png" alt="">
+                                                <img class="image-coin-icons-sales" style="height: 50px; width:50px ;" src="./data/money/500.png" alt="">
+                                                <img class="image-coin-icons-sales" style="height: 54px; width:54px ;" src="./data/money/1000.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-30" style="margin-top: 20px;">
+                                            <div class="uk-flex uk-flex-middle">
+                                                <h6 class="uk-margin-remove  font-weight-500 font-size-13">Cantidad recibida:</h6>
+                                                <h5 class="uk-margin-remove uk-text-bold padding-horizontal-5">$0</h5>
+                                            </div>
+                                            <div class="uk-flex uk-flex-middle">
+                                                <h6 class="uk-margin-remove  font-weight-500 font-size-13">Cambio:</h6>
+                                                <h5 class="uk-margin-remove uk-text-bold padding-horizontal-5">$0</h5>
+                                            </div>
+                                            <div>
+                                                <button class="buttons-close-cash-sales" style="width: 120px;">Limpiar recibido</button>
+                                            </div>
+                                        </div>
+                                        <div class="padding-horizontal-30" style="margin-top: 20px;">
+                                            <h6 class="uk-margin-remove font-size-11 color-grey">Agregar observaciones</h6>
+                                            <input class="inputs-manual-billing-sales" style="width: 100%;" type="text">
+                                        </div>
+                                        <div class="uk-position-bottom-right" style="margin-bottom: 20px;  margin-right: 30px;">
+                                            <button class="buttons-close-cash-sales uk-modal-close" type="button">Cancelar</button>
+                                            <button class="buttons-close-cash-sales" style="color: grey !important" type="button">Completar pago</button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <button class="buttons-total-sales uk-text-bold" style="margin-left: 5px;">Rápida con factura</button>
                             </div>
                             <div class="uk-flex uk-flex-center">
@@ -466,7 +564,7 @@
         </div>
     </div>
     <!-- Busqueda por categorías -->
-    <div style="display: inline;">
+    <div style="display: none;">
         <div class="main-container-sales">
             <!-- Subnavbar de busqueda -->
             <div class="uk-flex uk-flex-middle uk-flex-between subnavbar-search-products-sales">
