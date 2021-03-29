@@ -979,3 +979,37 @@
 .select-clients-sales select:disabled~.select_arrow-clients-sales {
     border-top-color: #cccccc;
 }
+
+.inputs-register-debit-card-sales {
+    border: 1px solid rgba(175, 175, 175, 0.74);
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.inputs-register-debit-card-sales::placeholder {
+    color: rgb(180, 180, 180);
+    font-size: 12px;
+}
+
+.image-debit-card-sales {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.buttons-options-payments-sales {
+    border-radius: 5px;
+    border: 1px solid rgba(172, 172, 172, 0.65);
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    color: blue;
+    background-color: white;
+    font-size: 12px;
+}
+
+.buttons-options-payments-sales:focus {
+    outline: 0;
+}

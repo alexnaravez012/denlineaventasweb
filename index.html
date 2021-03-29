@@ -396,7 +396,7 @@
                                                 </div>
                                             </div>
                                             <div class="uk-flex">
-                                                <div>
+                                                <div style="margin-bottom: 3px;">
                                                     <div class="uk-flex uk-flex-middle padding-vertical-10">
                                                         <div>
                                                             <h6 class="uk-margin-remove font-size-11 color-grey">Cédula del cliente:</h6>
@@ -426,9 +426,9 @@
                                                         </div>
                                                         <div class="select-cash-sales">
                                                             <select>
-                                                                <option>Efectivo</option>
-                                                                <option>Tarjeta débito</option>
-                                                                <option>Tarjeta crédito</option>
+                                                                    <option>Efectivo</option>
+                                                                    <option>Tarjeta débito</option>
+                                                                    <option>Tarjeta crédito</option>
                                                             </select>
                                                             <div class="select_arrow-cash-sales">
                                                             </div>
@@ -446,7 +446,7 @@
                                             </div>
                                         </div>
                                         <!-- pago en efectivo -->
-                                        <div style="display: none;">
+                                        <div style="display: inline;">
                                             <div style="margin-top: 20px;">
                                                 <div style="margin-left:30px ;">
                                                     <img class="image-bill-icons-sales" src="./data/money/anverso-1000.png" alt="">
@@ -464,7 +464,7 @@
                                                     <img class="image-coin-icons-sales" style="height: 54px; width:54px ;" src="./data/money/1000.png" alt="">
                                                 </div>
                                             </div>
-                                            <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-30" style="margin-top: 20px;">
+                                            <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-30" style="margin-top: 10px;">
                                                 <div class="uk-flex uk-flex-middle">
                                                     <h6 class="uk-margin-remove  font-weight-500 font-size-13">Cantidad recibida:</h6>
                                                     <h5 class="uk-margin-remove uk-text-bold padding-horizontal-5">$0</h5>
@@ -507,43 +507,70 @@
                                             </div>
                                         </div>
                                         <!-- Agregar tarjeta debito/credito -->
-                                        <div>
-                                            <div>
-                                                <h6 class="uk-margin-remove">Inscripción de tarjeta Master Card</h6>
-                                                <h6 class="uk-margin-remove">INFORMACIÓN DE FACTURACIÓN</h6>
-                                                <h6 class="uk-margin-remove">No se te hará ningún cargo hasta que realices una compra.</h6>
-                                            </div>
-                                            <div class="uk-flex uk-flex-middle">
-                                                <div class="uk-flex uk-flex-middle">
-                                                    <h6 class="uk-margin-remove">Nombre:</h6>
-                                                    <input type="text">
+                                        <div style="display: none;">
+                                            <div style="margin-top: 20px; margin-left: 30px;">
+                                                <div style="margin-bottom: 10px;">
+                                                    <h6 class="uk-margin-remove uk-text-bold" style="padding-bottom: 10px;">Inscripción de tarjeta Master Card</h6>
+                                                    <h6 class="uk-margin-remove uk-text-muted font-size-12">INFORMACIÓN DE FACTURACIÓN</h6>
+                                                    <h6 class="uk-margin-remove uk-text-muted font-size-12">No se te hará ningún cargo hasta que realices una compra.</h6>
                                                 </div>
-                                                <div class="uk-flex uk-flex-middle">
-                                                    <h6 class="uk-margin-remove">Numero de tarjeta:</h6>
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                            <div class="uk-flex uk-flex-middle">
-                                                <div class="uk-flex uk-flex-middle">
-                                                    <h6 class="uk-margin-remove">Tipo:</h6>
+                                                <div class="uk-flex uk-flex-middle" style="margin-bottom: 10px;">
                                                     <div class="uk-flex uk-flex-middle">
-                                                        <h6 class="uk-margin-remove">CC</h6>
-                                                        <i class="fas fa-caret-down"></i>
+                                                        <h6 class="uk-margin-remove font-size-13">Nombre:</h6>
+                                                        <input class="inputs-register-debit-card-sales uk-text-center" type="text" placeholder="Nombre en la tarjeta">
                                                     </div>
-                                                    <input type="text">
+                                                    <div class="uk-flex uk-flex-middle" style="margin-left: 25px;">
+                                                        <h6 class="uk-margin-remove font-size-13">Numero de tarjeta:</h6>
+                                                        <input class="inputs-register-debit-card-sales uk-text-center" style="width: 80px;" type="text" placeholder="--">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-flex uk-flex-middle" style="margin-bottom: 10px;">
+                                                    <div class="uk-flex uk-flex-middle">
+                                                        <h6 class="uk-margin-remove font-size-13">Tipo:</h6>
+                                                        <div class="uk-flex uk-flex-middle uk-flex-around inputs-register-debit-card-sales" style="width: 50px;">
+                                                            <h6 class="uk-margin-remove font-size-13">CC</h6>
+                                                            <i class="fas fa-caret-down"></i>
+                                                        </div>
+                                                        <input class="inputs-register-debit-card-sales uk-text-center" style="width: 160px;" type="text" placeholder="Número de documento">
+                                                    </div>
+                                                    <div class="uk-flex uk-flex-middle" style="margin-left: 25px;">
+                                                        <h6 class="uk-margin-remove font-size-13">Caduca el:</h6>
+                                                        <input class="inputs-register-debit-card-sales uk-text-center" style="width: 80px;" type="text" placeholder="MM/AAAA">
+                                                    </div>
                                                 </div>
                                                 <div class="uk-flex uk-flex-middle">
-                                                    <h6 class="uk-margin-remove">Caduca el:</h6>
-                                                    <input type="text">
+                                                    <h6 class="uk-margin-remove font-size-13">CVV:</h6>
+                                                    <input class="inputs-register-debit-card-sales uk-text-center" style="width: 80px;" type="text" placeholder="ccv">
+                                                </div>
+                                                <div class="uk-position-bottom-right">
+                                                    <button class="buttons-modal-alert-partial-payment-sales uk-text-bold uk-modal-close" style="height: 30px; width: 120px; margin-bottom: 20px; margin-right: 15px;">Cancelar</button>
+                                                    <button class="buttons-modal-alert-partial-payment-sales uk-text-bold" style="height: 30px; width: 120px; margin-bottom: 20px; margin-right: 20px; background-color: #FFF284;">Guardar</button>
                                                 </div>
                                             </div>
-                                            <div class="uk-flex uk-flex-middle">
-                                                <h6 class="uk-margin-remove">CVV:</h6>
-                                                <input type="text">
-                                            </div>
-                                            <div>
-                                                <button>Cancelar</button>
-                                                <button>Guardar</button>
+                                        </div>
+                                        <!-- Mostrando los datos introducirdos y los botones de pago parcial y pago completo. -->
+                                        <div style="display: none;">
+                                            <div style="padding-left: 30px; padding-top: 20px; padding-right: 30px;">
+                                                <div>
+                                                    <h6 class="uk-margin-remove uk-text-bold">Tarjea de débito/crédito</h6>
+                                                </div>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <img class="image-debit-card-sales" src="./data/master-card.png" alt="">
+                                                    <h6 class="uk-margin-remove">MASTERCARD--xxxx</h6>
+                                                </div>
+                                                <div style="margin-top: 20px;">
+                                                    <h6 class="uk-margin-remove font-size-12 color-grey">Agregar observaciones</h6>
+                                                    <input class="inputs-manual-billing-sales" style="width: 100%;" type="text">
+                                                </div>
+                                                <div class="uk-position-bottom-right uk-flex" style="margin-right: 20px; margin-bottom: 20px;">
+                                                    <div style="padding-top: 41px; margin-right: 15px;">
+                                                        <button class="buttons-options-payments-sales uk-modal-close">Cancelar</button>
+                                                    </div>
+                                                    <div class="uk-flex uk-flex-column">
+                                                        <button class="buttons-options-payments-sales" style="margin-bottom: 10px;">Pago parcial</button>
+                                                        <button class="buttons-options-payments-sales">Pago completo</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
