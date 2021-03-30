@@ -367,7 +367,7 @@
     border-bottom: 1px solid #aaaaaa !important;
     border-radius: 0px;
     background: #ffffff;
-    color: #a3a3a3;
+    color: #a7a7a7c5;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -537,6 +537,8 @@
     font-size: 11px;
     cursor: pointer;
     margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .buttons-close-cash-sales:focus {
@@ -701,13 +703,18 @@
     width: 210px !important;
     min-width: 210px !important;
     height: 130px !important;
-    border: 1px rgba(0, 0, 255, 0.37) solid;
+    border: 1px solid rgba(189, 189, 189, 0.835);
     border-radius: 10px;
     padding-left: 10px !important;
     padding-right: 10px !important;
     padding-top: 10px !important;
     padding-bottom: 15px !important;
     margin-bottom: 33px;
+    cursor: pointer;
+}
+
+.card-products-add-sales:hover {
+    border: 1.5px solid rgb(2, 173, 2);
 }
 
 .img-items-products-add-70-sales {
@@ -739,6 +746,7 @@
     background-color: rgb(226, 226, 226);
     width: 60px;
     height: 20px;
+    margin-top: 25px;
 }
 
 .like-size-card-sales {
@@ -764,7 +772,7 @@
 
 .related-products-box-sales {
     width: 320px;
-    height: 270px;
+    height: 255px;
     box-shadow: inset 0px -2px 7px 1px rgba(0, 0, 0, 0.15);
     overflow: auto;
     -ms-overflow-style: none;
@@ -823,8 +831,11 @@
 
 .inputs-manual-billing-sales {
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(156, 156, 156, 0.787);
     width: 70px;
+    font-size: 11px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .inputs-manual-billing-sales:focus {
@@ -873,7 +884,7 @@
 .select-cash-sales {
     position: relative;
     display: inline-block;
-    width: 100px;
+    width: 120px;
     height: 22px;
     border-radius: 10px;
 }
@@ -886,8 +897,9 @@
     padding-left: 10px;
     cursor: pointer;
     outline: 0;
-    border: 1px solid rgb(165, 165, 165);
-    font-size: 10px;
+    border: 1px solid #a7a7a7c5;
+    font-size: 9px;
+    padding-left: 40px;
     border-radius: 10px;
     background: #ffffff;
     color: #0c0fc3;
@@ -912,7 +924,7 @@
     margin-right: 5px;
     pointer-events: none;
     border-style: solid;
-    border-width: 8px 5px 0px 5px;
+    border-width: 6px 3px 0px 5px;
     border-color: #7b7b7b transparent transparent transparent;
 }
 
@@ -941,14 +953,15 @@
     padding-left: 10px;
     cursor: pointer;
     outline: 0;
-    border: 1px solid rgb(165, 165, 165);
-    font-size: 10px;
+    border: 1px solid rgba(165, 165, 165, 0.787);
+    font-size: 9px;
     border-radius: 10px;
     background: #ffffff;
     color: #0c0fc3;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+    padding-left: 20px;
 }
 
 .select-clients-sales select::-ms-expand {
@@ -962,12 +975,12 @@
 
 .select_arrow-clients-sales {
     position: absolute;
-    top: 10px;
+    top: 12px;
     right: 5px;
     margin-right: 5px;
     pointer-events: none;
     border-style: solid;
-    border-width: 8px 5px 0px 5px;
+    border-width: 6px 3px 0px 5px;
     border-color: #7b7b7b transparent transparent transparent;
 }
 
@@ -983,14 +996,14 @@
 .inputs-register-debit-card-sales {
     border: 1px solid rgba(175, 175, 175, 0.74);
     border-radius: 5px;
-    height: 30px;
+    height: 25px;
     width: 200px;
     margin-left: 10px;
 }
 
 .inputs-register-debit-card-sales::placeholder {
     color: rgb(180, 180, 180);
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .image-debit-card-sales {
