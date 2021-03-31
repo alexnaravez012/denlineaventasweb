@@ -56,12 +56,12 @@
                                 <div class="hr-tab"></div>
                                 <h6 class=" uk-margin-remove uk-text-bold font-size-12 padding-horizontal-25" style="padding-top: 7px;">Offline</h6>
                                 <div class="hr-tab"></div>
-                                <div class="uk-margin-remove uk-padding-remove">
-                                    <button uk-toggle="target: #options-box-cash" class="button-option-cash-sales">
+                                <div style="height: 50px; padding: 0px !important; margin: 0px !important;" uk-toggle="target: #border-right-none; cls: button-border-right-none-sales">
+                                    <button id="border-right-none" uk-toggle="target: #options-box-cash" class="button-option-cash-sales">
                                         <h6 class=" uk-margin-remove uk-text-left uk-text-bold font-size-12 padding-horizontal-25" style="width: 60px;">Opciones de caja</h6>
                                     </button>
                                 </div>
-                                <div class="hr-tab"></div>
+                                <div style="margin: 0px !important; padding: 0px !important;" class="hr-tab"></div>
                                 <div uk-toggle="target: #modal-most-selled-products">
                                     <h6 class="uk-margin-remove uk-text-bold font-size-12 padding-horizontal-25 cursor-pointer" style="padding-top: 5px;">Productos más vendidos</h6>
                                 </div>
@@ -93,13 +93,17 @@
                         </div>
                     </div>
                     <div id="options-box-cash" class="drop-option-cash-sales" hidden>
-                        <ul class="uk-flex uk-flex-middle" style="margin-bottom: 0px !important; padding-bottom: 0px !important;" uk-switcher>
-                            <button class="button-movements-cash-sales uk-flex uk-flex-middle">
-                                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12">Movimientos de caja</h6>
-                            </button>
-                            <button class="button-close-cash-sales uk-flex uk-flex-middle">
-                                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12">Cierre de caja</h6>
-                            </button>
+                        <ul class="uk-flex uk-flex-middle" style="margin: 0px !important; padding: 0px !important;" uk-switcher>
+                            <div uk-toggle="target: #toggle-custom0; cls: border-bottom-sales">
+                                <button id="toggle-custom1" class="button-movements-cash-sales uk-flex uk-flex-middle">
+                                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12">Movimientos de caja</h6>
+                                </button>
+                            </div>
+                            <div uk-toggle="target: #toggle-custom1; cls: border-bottom-two-sales">
+                                <button id="toggle-custom0" class="button-close-cash-sales uk-flex uk-flex-middle">
+                                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12">Cierre de caja</h6>
+                                </button>
+                            </div>
                         </ul>
                         <ul class="uk-switcher uk-margin">
                             <div>

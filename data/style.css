@@ -428,7 +428,7 @@
     background-color: white;
     margin-left: 150px;
     margin-top: 310px;
-    z-index: 200;
+    z-index: 20;
     position: relative;
 }
 
@@ -438,34 +438,43 @@
     padding: 0px !important;
     margin: 0px !important;
     cursor: pointer;
+    height: 50px;
 }
 
 .button-option-cash-sales:focus {
     outline: 0;
 }
 
+.button-border-right-none-sales {
+    width: 160px;
+    background-color: white;
+    height: 50px;
+    border-right: none;
+}
+
 .button-movements-cash-sales {
-    height: 35px;
+    height: 33px;
     border: none;
-    padding-right: 20px;
     cursor: pointer;
     background-color: white;
+    width: 180px;
+    margin-left: 0px;
+    padding-left: 25px;
 }
 
 .button-movements-cash-sales:focus {
-    box-shadow: 8px 1px 8px -7px rgba(0, 0, 0, 0.25);
     outline: 0;
 }
 
 .button-close-cash-sales {
-    height: 35px;
+    height: 33px;
+    width: 220px;
     border: 1px solid black;
     padding-left: 20px;
     padding-right: 20px;
     cursor: pointer;
     background-color: white;
     border: none;
-    margin-left: 5px;
 }
 
 .button-close-cash-sales:focus {
@@ -482,6 +491,16 @@
     border-top: 1px solid rgba(200, 200, 200, 0.466);
     font-size: 12px;
     cursor: pointer;
+}
+
+.border-bottom-sales {
+    border-bottom: 1px solid rgba(167, 167, 167, 0.787);
+    box-shadow: inset 3px 0px 6px -2px rgba(0, 0, 0, 0.35);
+}
+
+.border-bottom-two-sales {
+    border-bottom: 1px solid rgba(167, 167, 167, 0.787);
+    box-shadow: inset -3px 0px 6px -2px rgba(0, 0, 0, 0.35);
 }
 
 .buttons-final-drop-movement-cash-sales:focus {
