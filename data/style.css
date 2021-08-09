@@ -685,28 +685,28 @@
     margin-left: 10px;
 }
 
-.button-items-menu-categories-sales {
+.button-items-menu-sales {
     background-color: white;
     border: none;
-    height: 90px;
-    width: 90px !important;
+    height: 100px;
+    width: 100px;
     background-repeat: no-repeat !important;
     background-size: 50%;
     background-position: 100% auto;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
 }
 
-.button-items-menu-categories-sales {
-    background-color: white;
-    border: none;
-    height: 90px;
-    width: 90px !important;
-    background-repeat: no-repeat !important;
-    background-size: 50%;
-    background-position: 100% auto;
+.button-items-menu-sales:hover {
+    /* background-color: #F4FFAF; */
+    border: 2px solid rgba(128, 128, 128, 0.459);
+    border-radius: 8px;
 }
 
-.button-items-menu-categories-sales:hover {
-    background-color: #B1FFA6;
+.button-items-menu-sales:focus {
+    outline: 0;
 }
 
 .main-container-products-selection-sales {
@@ -747,10 +747,11 @@
 }
 
 .button-discount-card-sales {
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: rgb(0, 0, 102);
     color: white;
     width: 50px !important;
+    height: 18px;
     text-align: center;
     bottom: 95px;
     right: 170px;
@@ -785,7 +786,7 @@
     position: fixed;
     z-index: 200;
     background-color: white;
-    width: 980px;
+    width: 100%;
     height: 55px;
 }
 
@@ -1043,5 +1044,41 @@
 }
 
 .buttons-options-payments-sales:focus {
+    outline: 0;
+}
+
+.menu-categories-sales {
+    top: 73px;
+    padding-top: 10px;
+    width: 130px !important;
+    height: calc(100% - 140px) !important;
+    position: fixed;
+    z-index: 30 !important;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: white;
+    padding-left: 25px;
+}
+
+.menu-categories-sales::-webkit-scrollbar {
+    display: none;
+}
+
+.button-items-menu-categories-sales {
+    background-color: white;
+    border: none;
+    height: 90px;
+    width: 90px !important;
+    background-repeat: no-repeat !important;
+    background-size: 50%;
+    background-position: 100% auto;
+}
+
+.button-items-menu-categories-sales:hover {
+    background-color: #B1FFA6;
+}
+
+.button-items-menu-categories-sales:focus {
     outline: 0;
 }
